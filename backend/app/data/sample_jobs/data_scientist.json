@@ -1,0 +1,11 @@
+{
+  "title": "Data Scientist",
+  "company": "DataDriven Analytics",
+  "description": "Join our data science team to build predictive models, perform statistical analysis, and deliver actionable insights from large datasets. You'll work closely with product and engineering teams.",
+  "required_skills": ["Python", "Machine Learning", "SQL", "Pandas", "Statistics"],
+  "preferred_skills": ["Deep Learning", "TensorFlow", "Spark", "Tableau", "A/B Testing"],
+  "experience_min_years": 3,
+  "experience_max_years": 8,
+  "location": "New York, NY (Remote)",
+  "job_type": "full-time"
+}

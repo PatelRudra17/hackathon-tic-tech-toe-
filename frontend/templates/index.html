@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talent Intelligence - AI Resume Parser & Job Matcher</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">
+      <div class="logo-icon">AI</div>
+      Talent Intelligence
+    </div>
+    <div class="header-status">
+      <span class="status-dot"></span>
+      <span id="serverStatus">System Online</span>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="nav-tab active" data-tab="dashboard">
+      <span class="tab-icon">&#9776;</span> Dashboard
+    </button>
+    <button class="nav-tab" data-tab="parse">
+      <span class="tab-icon">&#128196;</span> Parse Resume
+    </button>
+    <button class="nav-tab" data-tab="match">
+      <span class="tab-icon">&#127919;</span> Job Matching
+    </button>
+    <button class="nav-tab" data-tab="candidates">
+      <span class="tab-icon">&#128101;</span> Candidates
+    </button>
+    <button class="nav-tab" data-tab="taxonomy">
+      <span class="tab-icon">&#128218;</span> Skill Taxonomy
+    </button>
+    <button class="nav-tab" data-tab="api">
+      <span class="tab-icon">&#128268;</span> API Docs
+    </button>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <!-- ════════ DASHBOARD TAB ════════ -->
+    <div class="tab-content active" id="tab-dashboard">
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-value" id="statSkills">157</div>
+          <div class="stat-label">Skills in Taxonomy</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statCandidates">0</div>
+          <div class="stat-label">Candidates Parsed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statMatches">0</div>
+          <div class="stat-label">Matches Made</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="statAgents">4</div>
+          <div class="stat-label">Active Agents</div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">&#9881; System Architecture</div>
+          <div style="padding:0.5rem 0;">
+            <div class="exp-item" style="border-left-color: #6366f1">
+              <div class="exp-title">Agent 1: Resume Parsing Agent</div>
+              <div class="exp-desc">Extracts structured data from PDF, DOCX, and TXT resumes using NLP + LLM</div>
+            </div>
+            <div class="exp-item" style="border-left-color: #0ea5e9">
+              <div class="exp-title">Agent 2: Skill Normalization Agent</div>
+              <div class="exp-desc">Maps skills to canonical taxonomy (JS &#8594; JavaScript, K8s &#8594; Kubernetes)</div>
+            </div>
+            <div class="exp-item" style="border-left-color: #10b981">
+              <div class="exp-title">Agent 3: Semantic Matching Agent</div>
+              <div class="exp-desc">Vector embedding-based skill matching with weighted scoring</div>
+            </div>
+            <div class="exp-item" style="border-left-color: #f59e0b">
+              <div class="exp-title">Orchestrator</div>
+              <div class="exp-desc">Coordinates all agents with retry logic, batch processing, and tracing</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">&#128640; Quick Start</div>
+          <div style="padding:0.5rem 0; color: var(--text-secondary); font-size:0.95rem;">
+            <p style="margin-bottom:1rem;"><strong>1.</strong> Go to <strong>Parse Resume</strong> tab and upload a resume (PDF/DOCX/TXT)</p>
+            <p style="margin-bottom:1rem;"><strong>2.</strong> View extracted data: name, skills, experience, education</p>
+            <p style="margin-bottom:1rem;"><strong>3.</strong> Go to <strong>Job Matching</strong> tab to match the candidate against a job</p>
+            <p style="margin-bottom:1rem;"><strong>4.</strong> See the match score, matched/missing skills, and gap analysis</p>
+            <p><strong>5.</strong> Browse the <strong>Skill Taxonomy</strong> with 157+ skills across 12 categories</p>
+          </div>
+          <div style="margin-top:1rem; display:flex; gap:0.5rem; flex-wrap:wrap;">
+            <button class="btn btn-primary" onclick="switchTab('parse')">&#128196; Parse Resume</button>
+            <button class="btn btn-secondary" onclick="switchTab('match')">&#127919; Try Matching</button>
+            <button class="btn btn-secondary" onclick="switchTab('taxonomy')">&#128218; Browse Skills</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ PARSE RESUME TAB ════════ -->
+    <div class="tab-content" id="tab-parse">
+      <div class="grid-2">
+        <!-- Left: Upload -->
+        <div>
+          <div class="card">
+            <div class="card-title">&#128196; Upload Resume(s)</div>
+            <div class="upload-zone" id="uploadZone" onclick="document.getElementById('fileInput').click()">
+              <div class="upload-icon">&#128194;</div>
+              <p><strong>Click to upload</strong> or drag & drop</p>
+              <p class="upload-hint">Supports PDF, DOCX, TXT (Max 10MB) &mdash; Select multiple files!</p>
+              <input type="file" id="fileInput" accept=".pdf,.docx,.doc,.txt" multiple hidden>
+            </div>
+            <div id="selectedFile" style="margin-top:1rem; display:none;">
+              <div style="padding:0.8rem; background:var(--bg); border-radius:8px;">
+                <div id="fileList" style="margin-bottom:0.6rem;"></div>
+                <div style="display:flex; align-items:center; justify-content:space-between;">
+                  <span id="fileName" style="font-weight:500;"></span>
+                  <div style="display:flex; gap:0.5rem;">
+                    <button class="btn btn-primary" id="parseBtn" onclick="parseResume()">
+                      Parse Resume(s)
+                    </button>
+                    <button class="btn btn-secondary" onclick="clearFiles()" style="padding:0.4rem 0.8rem;">
+                      Clear
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sample Resumes -->
+          <div class="card">
+            <div class="card-title">&#128203; Try Sample Resumes</div>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+              <button class="btn btn-secondary" onclick="parseSample('sample_resume_1.txt')">
+                &#128104;&#8205;&#128187; John Smith - Senior Software Engineer (7 yrs)
+              </button>
+              <button class="btn btn-secondary" onclick="parseSample('sample_resume_2.txt')">
+                &#128105;&#8205;&#128300; Priya Sharma - Data Scientist (4 yrs)
+              </button>
+              <button class="btn btn-secondary" onclick="parseSample('sample_resume_3.txt')">
+                &#128104;&#8205;&#128295; Alex Chen - Full Stack Developer (3 yrs)
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Results -->
+        <div>
+          <div class="card" id="batchProgress" style="display:none;">
+            <div class="card-title">&#9203; Batch Progress</div>
+            <div id="batchProgressContent"></div>
+          </div>
+          <div class="card" id="parseResults" style="display:none;">
+            <div class="card-title">&#9989; Parsed Results</div>
+            <div id="parseResultContent"></div>
+          </div>
+          <div class="card" id="parseEmpty">
+            <div class="empty-state">
+              <div class="empty-icon">&#128196;</div>
+              <p>Upload one or more resumes to see parsed results here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ JOB MATCHING TAB ════════ -->
+    <div class="tab-content" id="tab-match">
+      <div class="grid-2">
+        <!-- Left: Job Details -->
+        <div>
+          <div class="card">
+            <div class="card-title">&#128188; Job Description</div>
+
+            <!-- Quick select -->
+            <div class="form-group">
+              <label class="form-label">Quick Select Job Template</label>
+              <select class="form-select" id="jobTemplate" onchange="loadJobTemplate()">
+                <option value="">-- Select a template --</option>
+                <option value="swe">Senior Software Engineer</option>
+                <option value="ds">Data Scientist</option>
+                <option value="fe">Frontend Developer</option>
+                <option value="devops">DevOps Engineer</option>
+                <option value="ml">ML Engineer</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Job Title</label>
+              <input class="form-input" id="jobTitle" placeholder="e.g. Senior Software Engineer">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Required Skills (comma separated)</label>
+              <input class="form-input" id="requiredSkills" placeholder="e.g. Python, Docker, PostgreSQL">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Preferred Skills (comma separated)</label>
+              <input class="form-input" id="preferredSkills" placeholder="e.g. Kubernetes, AWS, Redis">
+            </div>
+
+            <!-- Resume for matching -->
+            <div class="form-group">
+              <label class="form-label">Upload Resume to Match</label>
+              <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
+                <input type="file" id="matchFileInput" accept=".pdf,.docx,.doc,.txt" style="flex:1; padding:0.4rem;">
+              </div>
+            </div>
+
+            <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:1rem;">
+              <button class="btn btn-primary btn-lg" onclick="runMatch()">&#127919; Run Match</button>
+              <button class="btn btn-secondary" onclick="matchSample('sample_resume_1.txt')">Match John Smith</button>
+              <button class="btn btn-secondary" onclick="matchSample('sample_resume_2.txt')">Match Priya Sharma</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Match Results -->
+        <div>
+          <div class="card" id="matchResults" style="display:none;">
+            <div class="card-title">&#127919; Match Results</div>
+            <div id="matchResultContent"></div>
+          </div>
+          <div class="card" id="matchEmpty">
+            <div class="empty-state">
+              <div class="empty-icon">&#127919;</div>
+              <p>Configure a job and upload a resume to see match results</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ CANDIDATES TAB ════════ -->
+    <div class="tab-content" id="tab-candidates">
+      <div class="card">
+        <div class="card-title">&#128101; Parsed Candidates</div>
+        <div id="candidatesList">
+          <div class="empty-state">
+            <div class="empty-icon">&#128101;</div>
+            <p>No candidates yet. Parse some resumes first!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ TAXONOMY TAB ════════ -->
+    <div class="tab-content" id="tab-taxonomy">
+      <div class="card">
+        <div class="card-title">&#128269; Search Skills</div>
+        <div style="display:flex; gap:0.5rem;">
+          <input class="form-input" id="skillSearch" placeholder="Search skills (e.g. python, react, K8s...)" onkeyup="debounceSearch()">
+          <button class="btn btn-primary" onclick="searchSkills()">Search</button>
+        </div>
+        <div id="searchResults" style="margin-top:1rem;"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">&#128218; Skill Taxonomy (157 Skills)</div>
+        <div id="taxonomyTree">
+          <div style="text-align:center; padding:2rem;"><div class="spinner"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ════════ API DOCS TAB ════════ -->
+    <div class="tab-content" id="tab-api">
+      <div class="card">
+        <div class="card-title">&#128268; API Documentation</div>
+        <p style="color:var(--text-secondary); margin-bottom:1rem;">
+          Full interactive API documentation is available via Swagger UI and ReDoc.
+        </p>
+        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+          <a href="/docs" target="_blank" class="btn btn-primary btn-lg">&#128214; Open Swagger UI</a>
+          <a href="/redoc" target="_blank" class="btn btn-secondary btn-lg">&#128213; Open ReDoc</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">&#128187; API Endpoints</div>
+        <table class="data-table">
+          <thead>
+            <tr><th>Method</th><th>Endpoint</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><span class="skill-tag matched">POST</span></td><td>/api/v1/parse</td><td>Parse a single resume</td></tr>
+            <tr><td><span class="skill-tag matched">POST</span></td><td>/api/v1/parse/batch</td><td>Batch parse multiple resumes</td></tr>
+            <tr><td><span class="skill-tag default">GET</span></td><td>/api/v1/parse/batch/{id}</td><td>Get batch job status</td></tr>
+            <tr><td><span class="skill-tag default">GET</span></td><td>/api/v1/candidates/{id}/skills</td><td>Get candidate skill profile</td></tr>
+            <tr><td><span class="skill-tag matched">POST</span></td><td>/api/v1/match</td><td>Match candidate to job</td></tr>
+            <tr><td><span class="skill-tag matched">POST</span></td><td>/api/v1/jobs</td><td>Create job description</td></tr>
+            <tr><td><span class="skill-tag default">GET</span></td><td>/api/v1/skills/taxonomy</td><td>Browse skill taxonomy</td></tr>
+            <tr><td><span class="skill-tag default">GET</span></td><td>/api/v1/skills/search</td><td>Search skills</td></tr>
+            <tr><td><span class="skill-tag default">GET</span></td><td>/api/v1/skills/normalize</td><td>Normalize a skill name</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="card-title">&#128273; Authentication</div>
+        <div style="color:var(--text-secondary);">
+          <p>All API endpoints require an API key via the <code style="background:var(--bg);padding:0.2rem 0.5rem;border-radius:4px;">X-API-Key</code> header.</p>
+          <p style="margin-top:0.5rem;">Default dev key: <code style="background:var(--bg);padding:0.2rem 0.5rem;border-radius:4px;">dev-api-key-change-in-production</code></p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <div id="loadingText" style="color:var(--text-secondary);">Processing...</div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

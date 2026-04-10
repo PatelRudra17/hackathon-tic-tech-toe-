@@ -1,0 +1,11 @@
+{
+  "title": "Full-Stack Engineer",
+  "company": "WebCraft Inc",
+  "description": "Build and maintain our SaaS platform used by 500k+ users. Work across the entire stack from React frontend to Node.js backend, with a focus on performance and accessibility.",
+  "required_skills": ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL"],
+  "preferred_skills": ["Next.js", "GraphQL", "Docker", "AWS", "Tailwind CSS", "Cypress", "Redis"],
+  "experience_min_years": 3,
+  "experience_max_years": 7,
+  "location": "Austin, TX (Hybrid)",
+  "job_type": "full-time"
+}

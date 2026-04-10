@@ -1,0 +1,11 @@
+{
+  "title": "Senior Backend Engineer",
+  "company": "CloudScale Systems",
+  "description": "We are looking for a Senior Backend Engineer to build and scale our high-throughput event-driven platform. You will work with distributed systems, design APIs, and optimize database performance for millions of daily transactions.",
+  "required_skills": ["Java", "Spring Boot", "PostgreSQL", "Kafka", "Docker"],
+  "preferred_skills": ["Kubernetes", "Redis", "gRPC", "Terraform", "Prometheus"],
+  "experience_min_years": 5,
+  "experience_max_years": 10,
+  "location": "New York, NY (Hybrid)",
+  "job_type": "full-time"
+}

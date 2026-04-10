@@ -1,0 +1,11 @@
+{
+  "title": "NLP/ML Engineer",
+  "company": "LanguageAI",
+  "description": "Build state-of-the-art NLP systems using transformer models and LLMs. You will develop text understanding, generation, and classification systems for enterprise customers.",
+  "required_skills": ["Python", "NLP", "Transformers", "PyTorch", "Machine Learning"],
+  "preferred_skills": ["LLMs", "BERT", "Hugging Face", "spaCy", "Docker", "AWS", "MLflow", "LangChain"],
+  "experience_min_years": 3,
+  "experience_max_years": 8,
+  "location": "Boston, MA (Hybrid)",
+  "job_type": "full-time"
+}

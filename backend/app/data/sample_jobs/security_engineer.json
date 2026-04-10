@@ -1,0 +1,11 @@
+{
+  "title": "Application Security Engineer",
+  "company": "CyberDefense Corp",
+  "description": "Looking for a Security Engineer to lead our application security program. You will conduct penetration testing, implement DevSecOps practices, and design secure architectures for cloud-native applications.",
+  "required_skills": ["Penetration Testing", "OWASP", "Python", "AWS Security", "DevSecOps"],
+  "preferred_skills": ["Burp Suite", "Docker", "Kubernetes", "Terraform", "SIEM", "Threat Modeling", "OAuth"],
+  "experience_min_years": 5,
+  "experience_max_years": 10,
+  "location": "Chicago, IL (Hybrid)",
+  "job_type": "full-time"
+}

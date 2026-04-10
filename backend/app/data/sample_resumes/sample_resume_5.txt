@@ -1,0 +1,47 @@
+Aisha Patel
+aisha.patel@email.com
++44 20 7555 1234
+London, UK
+linkedin.com/in/aishapatel-pm
+
+PROFESSIONAL SUMMARY
+Product Manager with 6 years of experience in fintech and SaaS products. Expert in user research, data-driven decision making, and cross-functional team leadership. Delivered products serving 2M+ users.
+
+WORK EXPERIENCE
+
+Senior Product Manager | PayFlow
+February 2022 - Present
+- Owned product roadmap for B2B payment platform processing £500M+ annually
+- Led user research initiatives interviewing 200+ customers to identify product-market fit
+- Increased user retention by 25% through data-driven feature prioritization using Mixpanel
+- Managed cross-functional team of 12 (engineering, design, QA) using Agile/Scrum
+
+Product Manager | SaaSTech
+August 2019 - January 2022
+- Launched 3 major product features generating £2M ARR within first year
+- Built A/B testing culture, running 50+ experiments with statistical significance
+- Created product analytics dashboards using Amplitude and SQL
+- Wrote PRDs and user stories for engineering team, maintaining 95% sprint completion rate
+
+Associate Product Manager | DigitalBank
+June 2018 - July 2019
+- Assisted in launching mobile banking app achieving 100k downloads in first month
+- Conducted competitive analysis across 15 competitor products
+- Supported user acceptance testing and bug triage
+- Created wireframes and prototypes using Figma
+
+EDUCATION
+
+MBA in Technology Management
+London Business School, 2016 - 2018
+
+Bachelor of Arts in Economics
+University of Oxford, 2012 - 2016
+
+SKILLS
+Product Strategy, Product Roadmap, User Research, Data Analytics, SQL, A/B Testing, Agile, Scrum, Jira, Figma, Mixpanel, Amplitude, Stakeholder Management, PRD, User Stories, Wireframing, OKRs, Go-to-Market, Competitive Analysis, Customer Journey Mapping
+
+CERTIFICATIONS
+- Pragmatic Institute Certified Product Manager
+- Certified Scrum Product Owner (CSPO)
+- Google Analytics Certified

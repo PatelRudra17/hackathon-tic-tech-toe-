@@ -1,0 +1,43 @@
+Lisa Thompson
+lisa.thompson@email.com
++1 (512) 555-0843
+Austin, TX
+linkedin.com/in/lisathompson-frontend
+
+PROFESSIONAL SUMMARY
+Frontend Engineer with 4 years of experience building performant, accessible web applications. Expert in React ecosystem, TypeScript, and modern CSS. Passionate about design systems and web performance.
+
+WORK EXPERIENCE
+
+Senior Frontend Engineer | DesignTech
+January 2023 - Present
+- Lead frontend architecture for SaaS platform serving 500k+ users
+- Built comprehensive design system with 80+ React components using Storybook
+- Improved Lighthouse performance score from 55 to 98 through code splitting and lazy loading
+- Implemented server-side rendering with Next.js reducing initial load time by 3 seconds
+
+Frontend Developer | WebCraft
+June 2021 - December 2022
+- Developed responsive web applications using React and TypeScript
+- Built real-time collaborative features using WebSockets and Redux
+- Implemented end-to-end testing with Cypress achieving 90% coverage
+- Created accessible components following WCAG 2.1 AA standards
+
+Junior Frontend Developer | CreativeAgency
+August 2020 - May 2021
+- Built marketing websites and landing pages using HTML, CSS, and JavaScript
+- Implemented animations using CSS and Framer Motion
+- Integrated with CMS platforms (Contentful, Strapi)
+- Optimized images and assets for web performance
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of Texas at Austin, 2016 - 2020
+
+SKILLS
+JavaScript, TypeScript, React, Next.js, HTML5, CSS3, Sass, Tailwind CSS, Redux, GraphQL, REST API, Webpack, Vite, Storybook, Cypress, Jest, React Testing Library, Figma, Git, Accessibility, WCAG, Responsive Design, Design Systems, Performance Optimization
+
+CERTIFICATIONS
+- Meta Frontend Developer Professional Certificate
+- Google UX Design Certificate

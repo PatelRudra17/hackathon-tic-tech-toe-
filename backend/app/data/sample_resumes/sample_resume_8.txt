@@ -1,0 +1,47 @@
+Raj Mehta
+raj.mehta@email.com
++91 99887 76655
+Pune, India
+linkedin.com/in/rajmehta-data
+
+PROFESSIONAL SUMMARY
+Data Engineer with 5 years of experience building large-scale data pipelines and analytics infrastructure. Expert in Apache Spark, Kafka, and cloud data platforms. Built pipelines processing 10TB+ daily.
+
+WORK EXPERIENCE
+
+Senior Data Engineer | DataScale
+August 2022 - Present
+- Designed lakehouse architecture on Databricks processing 15TB of data daily
+- Built real-time streaming pipelines using Kafka and Spark Structured Streaming
+- Implemented data quality framework using Great Expectations reducing data incidents by 70%
+- Migrated legacy ETL workflows to Apache Airflow with 200+ DAGs
+
+Data Engineer | AnalyticsCo
+March 2020 - July 2022
+- Built data warehouse on Snowflake ingesting data from 50+ sources
+- Developed dbt models for business-critical transformations
+- Created Kafka consumers processing 5M+ events per hour
+- Implemented data catalog using Apache Atlas for data governance
+
+Junior Data Engineer | TechData Inc
+June 2019 - February 2020
+- Built ETL pipelines using Python and Apache Spark
+- Managed PostgreSQL and MongoDB databases
+- Created Airflow DAGs for scheduled data processing
+- Wrote SQL queries for business analytics and reporting
+
+EDUCATION
+
+Master of Technology in Computer Science
+Indian Institute of Technology (IIT) Bombay, 2017 - 2019
+
+Bachelor of Engineering in Information Technology
+Pune University, 2013 - 2017
+
+SKILLS
+Python, SQL, Apache Spark, Apache Kafka, Apache Airflow, Databricks, Snowflake, dbt, AWS, S3, Redshift, Glue, PostgreSQL, MongoDB, Docker, Terraform, Git, Delta Lake, Great Expectations, Data Modeling, ETL, ELT, Data Warehouse, Hive, Presto
+
+CERTIFICATIONS
+- Databricks Certified Data Engineer Professional
+- AWS Certified Data Analytics Specialty
+- Snowflake SnowPro Core Certification

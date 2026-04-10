@@ -1,0 +1,11 @@
+{
+  "title": "Senior Software Engineer",
+  "company": "TechCorp Inc.",
+  "description": "We are looking for a Senior Software Engineer to join our backend team. You will design and build scalable microservices, mentor junior developers, and drive technical decisions. Experience with cloud-native architectures and CI/CD pipelines is essential.",
+  "required_skills": ["Python", "Docker", "PostgreSQL", "REST API", "Git"],
+  "preferred_skills": ["Kubernetes", "AWS", "Redis", "FastAPI", "Terraform"],
+  "experience_min_years": 5,
+  "experience_max_years": 10,
+  "location": "San Francisco, CA (Hybrid)",
+  "job_type": "full-time"
+}

@@ -1,0 +1,42 @@
+Tom Anderson
+tom.anderson@email.com
++1 (720) 555-0567
+Denver, CO
+linkedin.com/in/tomanderson-blockchain
+
+PROFESSIONAL SUMMARY
+Blockchain Developer with 4 years of experience in smart contract development, DeFi protocols, and Web3 infrastructure. Expert in Solidity, Ethereum, and cross-chain technologies.
+
+WORK EXPERIENCE
+
+Senior Blockchain Developer | DeFi Labs
+March 2022 - Present
+- Developed and audited smart contracts for DeFi protocol with $500M TVL
+- Built cross-chain bridge supporting Ethereum, Polygon, and Arbitrum
+- Implemented automated testing and formal verification using Foundry and Slither
+- Led security review process preventing $10M+ in potential exploits
+
+Blockchain Developer | CryptoVentures
+July 2020 - February 2022
+- Built NFT marketplace smart contracts using Solidity and ERC-721/ERC-1155 standards
+- Developed Web3 frontend using React, Ethers.js, and MetaMask integration
+- Created subgraph for The Graph to index on-chain events
+- Implemented token staking and governance contracts
+
+Junior Developer | TechStartup
+January 2020 - June 2020
+- Developed REST APIs using Node.js and Express
+- Built frontend features with React and TypeScript
+- Learned Solidity and deployed first smart contracts on Ethereum testnet
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of Colorado Boulder, 2016 - 2020
+
+SKILLS
+Solidity, Ethereum, Smart Contracts, Web3.js, Ethers.js, Hardhat, Foundry, React, TypeScript, Node.js, IPFS, The Graph, DeFi, NFTs, ERC-20, ERC-721, Polygon, Arbitrum, Optimism, Git, Docker, Security Auditing, Formal Verification, GraphQL
+
+CERTIFICATIONS
+- Consensys Certified Ethereum Developer
+- Chainlink Developer Expert

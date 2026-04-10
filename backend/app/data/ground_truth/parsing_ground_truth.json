@@ -1,0 +1,32 @@
+[
+  {
+    "file": "sample_resume_1.txt",
+    "expected": {
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@email.com",
+      "skills": ["Python", "JavaScript", "React", "Docker", "AWS", "PostgreSQL", "Machine Learning", "TensorFlow", "Git", "FastAPI", "Kubernetes"],
+      "companies": ["TechCorp", "DataVision Inc", "StartupHub"],
+      "degrees": ["Master of Science", "Bachelor of Science"]
+    }
+  },
+  {
+    "file": "sample_resume_2.txt",
+    "expected": {
+      "name": "Michael Chen",
+      "email": "michael.chen@email.com",
+      "skills": ["Java", "Spring Boot", "Microservices", "Kafka", "Docker", "Kubernetes", "AWS", "PostgreSQL", "MongoDB", "Redis", "Git"],
+      "companies": ["CloudScale Systems", "FinTech Solutions", "Enterprise Corp"],
+      "degrees": ["Bachelor of Engineering"]
+    }
+  },
+  {
+    "file": "sample_resume_3.txt",
+    "expected": {
+      "name": "Emily Rodriguez",
+      "email": "emily.rodriguez@email.com",
+      "skills": ["Python", "R", "SQL", "TensorFlow", "PyTorch", "Pandas", "Scikit-learn", "Spark", "Tableau"],
+      "companies": ["Analytics Pro", "HealthTech AI", "Research Labs Inc"],
+      "degrees": ["PhD", "Master of Science"]
+    }
+  }
+]

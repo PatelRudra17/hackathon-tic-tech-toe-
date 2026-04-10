@@ -1,0 +1,11 @@
+{
+  "title": "Senior Data Engineer",
+  "company": "DataScale Corp",
+  "description": "Build and scale our data infrastructure processing 15TB+ daily. You will design lakehouse architectures, build streaming pipelines, and implement data quality frameworks.",
+  "required_skills": ["Python", "Apache Spark", "Apache Kafka", "SQL", "Airflow"],
+  "preferred_skills": ["Databricks", "Snowflake", "dbt", "AWS", "Docker", "Terraform", "Delta Lake", "Great Expectations"],
+  "experience_min_years": 4,
+  "experience_max_years": 8,
+  "location": "Pune, India (Hybrid)",
+  "job_type": "full-time"
+}

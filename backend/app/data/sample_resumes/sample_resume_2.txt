@@ -1,0 +1,49 @@
+Michael Chen
+michael.chen@email.com
++1 (212) 555-0847
+New York, NY
+linkedin.com/in/michaelchen-dev
+
+PROFESSIONAL SUMMARY
+Backend Engineer with 6 years of experience building high-performance distributed systems. Expertise in Java, cloud-native architecture, and event-driven systems. Proven track record of delivering systems processing millions of transactions per day.
+
+WORK EXPERIENCE
+
+Lead Backend Engineer | CloudScale Systems
+January 2022 - Present
+- Designed event-driven architecture using Kafka and Spring Boot processing 5M events/day
+- Led migration from monolith to microservices, reducing deployment time from 2 hours to 15 minutes
+- Implemented distributed caching with Redis, improving response times by 40%
+- Managed a team of 8 engineers across 3 time zones
+
+Senior Software Engineer | FinTech Solutions
+August 2019 - December 2021
+- Built high-throughput payment processing system handling $2B+ annually using Java and Spring Boot
+- Designed and optimized MongoDB and PostgreSQL databases for financial data
+- Implemented API gateway with rate limiting serving 50k+ concurrent connections
+- Led adoption of Docker and Kubernetes for container orchestration
+
+Software Developer | Enterprise Corp
+June 2017 - July 2019
+- Developed RESTful microservices with Java and Spring Framework
+- Built data pipelines using Apache Kafka and Apache Spark
+- Managed AWS infrastructure using Terraform and CloudFormation
+- Wrote comprehensive unit and integration tests with JUnit and Mockito
+
+EDUCATION
+
+Bachelor of Engineering in Computer Science
+Columbia University, 2013 - 2017
+GPA: 3.6
+
+SKILLS
+Java, Spring Boot, Microservices, Kafka, Docker, Kubernetes, AWS, PostgreSQL, MongoDB, Redis, Terraform, Git, Python, REST API, GraphQL, gRPC, Linux, Jenkins, Elasticsearch, Grafana, Prometheus
+
+CERTIFICATIONS
+- AWS Certified Developer Associate
+- Confluent Certified Developer for Apache Kafka
+- Oracle Certified Professional Java SE 17
+
+PROJECTS
+- KafkaFlow: Open-source Kafka consumer framework for Java, 800+ GitHub stars
+- Microservice Template: Production-ready Spring Boot microservice template with health checks and metrics

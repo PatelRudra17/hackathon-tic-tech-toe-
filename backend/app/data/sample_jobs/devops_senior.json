@@ -1,0 +1,11 @@
+{
+  "title": "Senior DevOps Engineer",
+  "company": "StreamPlatform",
+  "description": "Join our platform team to build and maintain cloud infrastructure serving millions of users. You will design CI/CD pipelines, manage Kubernetes clusters, and implement observability solutions.",
+  "required_skills": ["AWS", "Kubernetes", "Docker", "Terraform", "Linux"],
+  "preferred_skills": ["ArgoCD", "Prometheus", "Grafana", "Helm", "Python", "Ansible", "Jenkins"],
+  "experience_min_years": 4,
+  "experience_max_years": 8,
+  "location": "Seattle, WA (Remote OK)",
+  "job_type": "full-time"
+}

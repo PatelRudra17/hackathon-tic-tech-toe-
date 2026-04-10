@@ -1,0 +1,49 @@
+James Wilson
+james.wilson@email.com
++1 (312) 555-0678
+Chicago, IL
+linkedin.com/in/jameswilson-security
+
+PROFESSIONAL SUMMARY
+Cybersecurity Engineer with 7 years of experience in application security, penetration testing, and security architecture. CISSP and OSCP certified. Expert in securing cloud-native applications and DevSecOps practices.
+
+WORK EXPERIENCE
+
+Senior Security Engineer | CyberDefense Corp
+May 2021 - Present
+- Led application security program covering 100+ microservices and APIs
+- Conducted penetration testing and vulnerability assessments using Burp Suite and Metasploit
+- Implemented DevSecOps pipeline integrating SAST/DAST tools (SonarQube, OWASP ZAP) into CI/CD
+- Designed zero-trust architecture for multi-cloud environment (AWS + Azure)
+- Reduced critical vulnerabilities by 80% through automated security scanning
+
+Security Engineer | FinSecure
+March 2019 - April 2021
+- Built OAuth 2.0/OIDC authentication system supporting 500k+ users
+- Implemented WAF rules and DDoS protection for production services
+- Conducted security training for 50+ developers on OWASP Top 10
+- Performed threat modeling for new features using STRIDE methodology
+
+Junior Security Analyst | SecOps Inc
+July 2017 - February 2019
+- Monitored SIEM alerts and performed incident response using Splunk
+- Conducted vulnerability scanning with Nessus and Qualys
+- Assisted in PCI DSS and SOC 2 compliance audits
+- Wrote security policies and procedures documentation
+
+EDUCATION
+
+Master of Science in Cybersecurity
+Georgia Institute of Technology, 2015 - 2017
+
+Bachelor of Science in Computer Science
+University of Illinois at Urbana-Champaign, 2011 - 2015
+
+SKILLS
+Penetration Testing, OWASP, Burp Suite, Metasploit, Nmap, Wireshark, OAuth, JWT, SSL/TLS, WAF, SIEM, Splunk, Python, Bash, Docker, Kubernetes, AWS Security, Azure Security, DevSecOps, SonarQube, Threat Modeling, Encryption, PKI, Zero Trust, Incident Response, Compliance
+
+CERTIFICATIONS
+- CISSP (Certified Information Systems Security Professional)
+- OSCP (Offensive Security Certified Professional)
+- AWS Certified Security Specialty
+- CompTIA Security+

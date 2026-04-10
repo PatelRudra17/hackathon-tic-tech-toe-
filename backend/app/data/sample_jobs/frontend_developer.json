@@ -1,0 +1,11 @@
+{
+  "title": "Frontend Developer",
+  "company": "PixelPerfect Studios",
+  "description": "We need a creative Frontend Developer to build beautiful, responsive user interfaces for our SaaS products. You'll collaborate with designers and backend engineers to deliver exceptional user experiences.",
+  "required_skills": ["JavaScript", "React", "TypeScript", "CSS", "HTML"],
+  "preferred_skills": ["Next.js", "Redux", "GraphQL", "Jest", "Figma"],
+  "experience_min_years": 2,
+  "experience_max_years": 6,
+  "location": "Austin, TX (On-site)",
+  "job_type": "full-time"
+}

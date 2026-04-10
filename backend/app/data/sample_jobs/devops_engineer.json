@@ -1,0 +1,11 @@
+{
+  "title": "DevOps Engineer",
+  "company": "CloudScale Systems",
+  "description": "Looking for a DevOps Engineer to manage our cloud infrastructure, build CI/CD pipelines, and ensure high availability of production systems. Strong Linux and automation skills required.",
+  "required_skills": ["Docker", "Kubernetes", "AWS", "Linux", "Terraform"],
+  "preferred_skills": ["Jenkins", "Prometheus", "Grafana", "Ansible", "Python"],
+  "experience_min_years": 3,
+  "experience_max_years": 8,
+  "location": "Seattle, WA (Remote)",
+  "job_type": "full-time"
+}

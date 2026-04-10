@@ -1,0 +1,45 @@
+David Kim
+david.kim@email.com
++1 (206) 555-0421
+Seattle, WA
+linkedin.com/in/davidkim-devops
+
+PROFESSIONAL SUMMARY
+DevOps Engineer with 5 years of experience in cloud infrastructure, CI/CD, and site reliability engineering. AWS certified with expertise in container orchestration, infrastructure as code, and monitoring.
+
+WORK EXPERIENCE
+
+Senior DevOps Engineer | StreamPlatform
+June 2022 - Present
+- Managed Kubernetes clusters (50+ nodes) running 200+ microservices on AWS EKS
+- Built Terraform modules for infrastructure provisioning across 3 AWS regions
+- Implemented observability stack with Prometheus, Grafana, and Datadog reducing MTTR by 65%
+- Designed GitOps workflows using ArgoCD for zero-downtime deployments
+
+DevOps Engineer | WebServices Inc
+March 2020 - May 2022
+- Automated CI/CD pipelines with Jenkins and GitHub Actions for 30+ repositories
+- Migrated on-premise workloads to AWS, resulting in 35% cost reduction
+- Implemented HashiCorp Vault for secrets management across all environments
+- Built Docker images and Helm charts for all production services
+
+Systems Administrator | HostingCo
+January 2019 - February 2020
+- Managed Linux servers (Ubuntu, CentOS) hosting 500+ websites
+- Configured Nginx and Apache web servers with load balancing
+- Automated server provisioning with Ansible playbooks
+- Monitored infrastructure using Nagios and ELK Stack
+
+EDUCATION
+
+Bachelor of Science in Information Technology
+University of Washington, 2015 - 2019
+
+SKILLS
+AWS, Docker, Kubernetes, Terraform, Ansible, Jenkins, GitHub Actions, ArgoCD, Linux, Nginx, Python, Bash, Prometheus, Grafana, Datadog, Helm, Vault, ELK Stack, PostgreSQL, Redis, Git, CI/CD, GitOps, CloudFormation
+
+CERTIFICATIONS
+- AWS Solutions Architect Professional
+- Certified Kubernetes Administrator (CKA)
+- HashiCorp Certified Terraform Associate
+- Red Hat Certified System Administrator (RHCSA)

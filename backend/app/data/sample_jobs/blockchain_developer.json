@@ -1,0 +1,11 @@
+{
+  "title": "Senior Blockchain Developer",
+  "company": "DeFi Labs",
+  "description": "Develop and audit smart contracts for our DeFi protocol. You will build cross-chain solutions, implement security best practices, and contribute to protocol governance design.",
+  "required_skills": ["Solidity", "Ethereum", "Smart Contracts", "JavaScript", "Git"],
+  "preferred_skills": ["Hardhat", "Foundry", "React", "TypeScript", "Web3.js", "Ethers.js", "Security Auditing", "DeFi"],
+  "experience_min_years": 3,
+  "experience_max_years": 7,
+  "location": "Denver, CO (Remote)",
+  "job_type": "full-time"
+}

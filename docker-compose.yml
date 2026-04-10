@@ -1,0 +1,75 @@
+version: '3.8'
+
+services:
+  # Main Application
+  app:
+    build: .
+    container_name: talent-intelligence-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/talent_intelligence
+      - DATABASE_URL_SYNC=postgresql://postgres:postgres@db:5432/talent_intelligence
+      - REDIS_URL=redis://redis:6379/0
+      - CHROMA_PERSIST_DIR=/project/chroma_data
+      - UPLOAD_DIR=/project/uploads
+      - DEBUG=true
+      - DEFAULT_API_KEY=dev-api-key-change-in-production
+    volumes:
+      - ./uploads:/project/uploads
+      - chroma_data:/project/chroma_data
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - talent-net
+
+  # PostgreSQL Database
+  db:
+    image: postgres:16-alpine
+    container_name: talent-intelligence-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: talent_intelligence
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - talent-net
+
+  # Redis Cache & Queue
+  redis:
+    image: redis:7-alpine
+    container_name: talent-intelligence-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - talent-net
+
+volumes:
+  postgres_data:
+  redis_data:
+  chroma_data:
+
+networks:
+  talent-net:
+    driver: bridge

@@ -1,0 +1,11 @@
+{
+  "title": "Senior iOS Developer",
+  "company": "AppFactory",
+  "description": "Join our mobile team to build and maintain our flagship iOS applications used by 1M+ users. You will work with Swift, SwiftUI, and modern iOS frameworks to deliver polished user experiences.",
+  "required_skills": ["Swift", "SwiftUI", "UIKit", "Xcode", "REST API"],
+  "preferred_skills": ["CoreData", "CloudKit", "React Native", "Firebase", "Fastlane", "ARKit", "CoreML"],
+  "experience_min_years": 3,
+  "experience_max_years": 7,
+  "location": "Miami, FL",
+  "job_type": "full-time"
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Machine Learning Engineer",
+  "company": "AI Innovations Lab",
+  "description": "Join our ML team to build and deploy production-grade machine learning models. You'll work on NLP, recommendation systems, and real-time inference pipelines.",
+  "required_skills": ["Python", "Machine Learning", "TensorFlow", "Docker", "SQL"],
+  "preferred_skills": ["PyTorch", "Kubernetes", "NLP", "MLOps", "Spark"],
+  "experience_min_years": 3,
+  "experience_max_years": 7,
+  "location": "Boston, MA (Hybrid)",
+  "job_type": "full-time"
+}

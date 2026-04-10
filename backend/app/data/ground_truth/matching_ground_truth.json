@@ -1,0 +1,95 @@
+[
+  {
+    "job": {
+      "title": "Senior Backend Engineer",
+      "description": "Looking for a senior backend engineer with strong Python skills",
+      "required_skills": ["Python", "PostgreSQL", "Docker", "REST API"],
+      "preferred_skills": ["Kubernetes", "AWS", "Redis", "Kafka"],
+      "experience_min_years": 5
+    },
+    "candidates": [
+      {
+        "skills": ["Python", "PostgreSQL", "Docker", "Kubernetes", "AWS", "Redis", "FastAPI", "Git"],
+        "expert_score": 0.95
+      },
+      {
+        "skills": ["Python", "PostgreSQL", "Docker", "REST API", "Git"],
+        "expert_score": 0.80
+      },
+      {
+        "skills": ["Python", "MySQL", "Linux", "Flask"],
+        "expert_score": 0.55
+      },
+      {
+        "skills": ["Java", "Spring Boot", "PostgreSQL", "Docker"],
+        "expert_score": 0.40
+      },
+      {
+        "skills": ["JavaScript", "React", "Node.js", "MongoDB"],
+        "expert_score": 0.15
+      }
+    ]
+  },
+  {
+    "job": {
+      "title": "ML Engineer",
+      "description": "Machine learning engineer for NLP team",
+      "required_skills": ["Python", "Machine Learning", "TensorFlow", "NLP"],
+      "preferred_skills": ["PyTorch", "Docker", "AWS", "Spark"],
+      "experience_min_years": 3
+    },
+    "candidates": [
+      {
+        "skills": ["Python", "TensorFlow", "PyTorch", "NLP", "Machine Learning", "Docker", "AWS"],
+        "expert_score": 0.95
+      },
+      {
+        "skills": ["Python", "Machine Learning", "Scikit-learn", "Pandas", "SQL"],
+        "expert_score": 0.60
+      },
+      {
+        "skills": ["Python", "TensorFlow", "Computer Vision", "Docker"],
+        "expert_score": 0.50
+      },
+      {
+        "skills": ["Java", "Spark", "Hadoop", "SQL"],
+        "expert_score": 0.20
+      },
+      {
+        "skills": ["HTML", "CSS", "JavaScript", "React"],
+        "expert_score": 0.05
+      }
+    ]
+  },
+  {
+    "job": {
+      "title": "Full-Stack Developer",
+      "description": "Full-stack developer for web platform",
+      "required_skills": ["JavaScript", "React", "Node.js", "PostgreSQL"],
+      "preferred_skills": ["TypeScript", "Docker", "AWS", "GraphQL"],
+      "experience_min_years": 2
+    },
+    "candidates": [
+      {
+        "skills": ["JavaScript", "TypeScript", "React", "Node.js", "PostgreSQL", "Docker", "GraphQL"],
+        "expert_score": 0.95
+      },
+      {
+        "skills": ["JavaScript", "React", "Node.js", "MongoDB", "Git"],
+        "expert_score": 0.75
+      },
+      {
+        "skills": ["JavaScript", "Vue.js", "Python", "PostgreSQL"],
+        "expert_score": 0.50
+      },
+      {
+        "skills": ["Python", "Django", "PostgreSQL", "Docker"],
+        "expert_score": 0.35
+      },
+      {
+        "skills": ["Java", "Spring Boot", "Angular", "MySQL"],
+        "expert_score": 0.25
+      }
+    ]
+  }
+]

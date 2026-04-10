@@ -1,0 +1,43 @@
+Maria Garcia
+maria.garcia@email.com
++1 (305) 555-0912
+Miami, FL
+linkedin.com/in/mariagarcia-mobile
+
+PROFESSIONAL SUMMARY
+Mobile Developer with 5 years of experience in iOS and cross-platform development. Expert in Swift, SwiftUI, and React Native. Shipped 10+ apps with over 5M combined downloads on the App Store.
+
+WORK EXPERIENCE
+
+Senior iOS Developer | AppFactory
+October 2022 - Present
+- Lead iOS development for fintech app with 1M+ active users
+- Built custom SwiftUI components and design system used across 3 apps
+- Implemented offline-first architecture with CoreData and CloudKit sync
+- Reduced app crash rate from 2% to 0.1% through systematic debugging and monitoring
+
+Mobile Developer | TravelTech
+April 2020 - September 2022
+- Developed cross-platform travel booking app using React Native
+- Implemented push notifications, deep linking, and in-app purchases
+- Built CI/CD pipeline with Fastlane and GitHub Actions
+- Increased App Store rating from 3.8 to 4.7 through UX improvements
+
+Junior iOS Developer | StartupMobile
+June 2019 - March 2020
+- Developed iOS features using Swift and UIKit
+- Integrated RESTful APIs and handled JSON parsing
+- Wrote unit tests using XCTest
+- Participated in code reviews and sprint planning
+
+EDUCATION
+
+Bachelor of Science in Computer Science
+University of Miami, 2015 - 2019
+
+SKILLS
+Swift, SwiftUI, UIKit, React Native, JavaScript, TypeScript, Xcode, CoreData, CloudKit, REST API, JSON, Git, Fastlane, TestFlight, Firebase, Push Notifications, In-App Purchases, CocoaPods, SPM, ARKit, CoreML, Figma, Agile
+
+CERTIFICATIONS
+- Apple Certified iOS Developer
+- React Native Certification (Meta)
